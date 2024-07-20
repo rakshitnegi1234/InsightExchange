@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ALL POSTS (QUORA)</h1>
+        <button class="toggle-mode">Toggle Dark/Light Mode</button>
+        <br>
+        <% for(let p of data) { %>
+            <div class="post">
+                <p class="user"><%=p.username%></p>  
+                <p class="content"><%=p.content%></p>
+                <a href="http://localhost:3000/posts/<%=p.id%>">See In Detail</a><br>
+                <a href="http://localhost:3000/posts/<%=p.id%>/edit">Edit Post</a><br>
+                <form action="http://localhost:3000/posts/<%=p.id%>?_method=DELETE" method="post">
+                    <button>Delete Post</button>
+                </form> 
+            </div>
+            <hr>  
+        <% } %>
+        <a class="add-post" href="http://localhost:3000/posts/new">ADD POST</a>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+    --background-light: #f4f4f4;
+    --background-dark: #121212;
+    --text-light: #000;
+    --text-dark: #fff;
+    --primary-color: #007BFF;
+    --secondary-color: #FF6347;
+    --form-background-light: #FAEBD7;
+    --form-background-dark: #2C2C2C;
+    --border-light: #333;
+    --border-dark: #444;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--form-background-light);
+    border: 2px solid var(--border-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+p {
+    font-size: 1.1em;
+    color: var(--text-light);
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 0 8px rgba(0,123,255,0.6);
+}
+
+button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 20px auto 0;
+    padding: 10px;
+    background: linear-gradient(to left, yellow, green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to left, green, yellow);
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

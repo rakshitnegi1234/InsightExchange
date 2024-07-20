@@ -1,0 +1,56 @@
+:root {
+    --background-light: #f4f4f4;
+    --background-dark: #121212;
+    --text-light: #000;
+    --text-dark: #fff;
+    --primary-color: #007BFF;
+    --secondary-color: #FF6347;
+    --accent-light: #28A745;
+    --accent-dark: #218838;
+    --border-light: #333;
+    --border-dark: #444;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+p {
+    font-size: 1.1em;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.class {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--form-background-light);
+    border: 2px solid var(--border-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
