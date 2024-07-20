@@ -19,7 +19,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/insightexchange.git
+git clone https://github.com/rakshitnegi1234/insightexchange.git
 Navigate to the Project Directory
 
 bash
