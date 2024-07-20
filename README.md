@@ -76,7 +76,7 @@ License
 InsightExchange is licensed under the MIT License.
 
 Contact
-For any questions or feedback, reach out to us at your.email@example.com.
+For any questions or feedback, reach out to us at rakshitnegi7@gmail.com.
 
 Adjust the repository links, email addresses, and other details according to your project specifics. This README should help users and contributors get started with InsightExchange efficiently.
 
